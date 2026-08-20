@@ -1,7 +1,7 @@
-GET http://localhost:3333/
+GET https://backendfilmes.vercel.app/
 
 ###
-POST http://localhost:3333/create
+POST https://backendfilmes.vercel.app/create
 Content-Type: application/json
 
 {
@@ -12,10 +12,10 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3333/delete/12
+DELETE https://backendfilmes.vercel.app/delete/12
 
 ###
-PUT http://localhost:3333/update/2
+PUT https://backendfilmes.vercel.app/update/2
 Content-Type: application/json
 
 {

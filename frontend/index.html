@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Frontend</title>
 </head>
 <body>
-    <h1>Lista de Filmes</h1>
+    <h1>Leci e Pietra - Lista de Filmes</h1>
 
     <section class="filmes">
         <div>
@@ -20,7 +21,7 @@
     <script>
         async function buscarFilmes() {
 
-    const resposta = await fetch("http://localhost:3333")
+    const resposta = await fetch("https://backendfilmes.vercel.app/")
     const filmes = await resposta.json()
     const sectionFilmes = document.querySelector(".filmes")
     
