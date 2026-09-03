@@ -21,7 +21,7 @@ async function cadastrarFilme() {
         duration
     }
 
-    const resposta = await fetch("https://backend-filmes03mc.vercel.app/create", {
+    const resposta = await fetch("https://vercel.com/leciane-silva12as-projects/backend_filmes", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
@@ -33,5 +33,5 @@ async function cadastrarFilme() {
 
     alert(respostaJS.message)
 
-    window.location.href = "../index.html"
+    window.location.href = "../frontend/index.html"
 }
