@@ -22,7 +22,7 @@ app.get("/", (request, response) => {
 app.post("/create", (request, response) => {
     const { title, gender, ageLimit, duration } = request.body
 
-    const insertCommand = "INSERT INTO filmes_LecianeLeonardol(title, gender, ageLimit, duration) VALUES (?, ?, ?, ?)"
+    const insertCommand = "INSERT INTO filmes_LecianeLeonardo(title, gender, ageLimit, duration) VALUES (?, ?, ?, ?)"
 
     database.query(insertCommand, [title, gender, ageLimit, duration], (error) => {
         if (error) {

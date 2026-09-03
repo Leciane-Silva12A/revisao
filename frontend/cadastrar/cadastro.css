@@ -8,8 +8,3 @@ header {
         color: white;
     }
 }
-
-.filmes {
-    display: flex;
-    flex-wrap: wrap;
-}
