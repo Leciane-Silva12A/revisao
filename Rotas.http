@@ -1,7 +1,7 @@
-GET https://backendfilmes.vercel.app/
+GET hhttps://vercel.com/leciane-silva12as-projects/backend_filmes/
 
 ###
-POST https://backendfilmes.vercel.app/create
+POST https://vercel.com/leciane-silva12as-projects/backend_filmes/create
 Content-Type: application/json
 
 {
@@ -12,10 +12,10 @@ Content-Type: application/json
 }
 
 ###
-DELETE https://backendfilmes.vercel.app/delete/12
+DELETE https://vercel.com/leciane-silva12as-projects/backend_filmes/delete/12
 
 ###
-PUT https://backendfilmes.vercel.app/update/2
+PUT https://vercel.com/leciane-silva12as-projects/backend_filmes/update/2
 Content-Type: application/json
 
 {

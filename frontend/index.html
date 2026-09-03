@@ -7,38 +7,17 @@
     <title>Frontend</title>
 </head>
 <body>
-    <h1>Leci e Pietra - Lista de Filmes</h1>
+    <header>
+        <h1>Lista de Filmes</h1>
 
-    <section class="filmes">
-        <div>
-            <h2>Título do Filme</h2>
-            <p><strong>Gênero:</strong></p>
-            <p><strong>Duração:</strong></p>
-            <p><strong>Classificação indicativa:</strong></p>
-        </div>
-    </section>
+        <nav>
+            <a href="../cadastrar/cadastro.html">Cadastrar novo filme</a>
+        </nav>
+    </header>
 
-    <script>
-        async function buscarFilmes() {
+    <section class="filmes"></section>
 
-    const resposta = await fetch("https://backendfilmes.vercel.app/")
-    const filmes = await resposta.json()
-    const sectionFilmes = document.querySelector(".filmes")
-    
-    filmes.forEach((filme) => {
-        sectionFilmes.innerHTML += `
-            <div>
-                <h2>${filme.title}</h2>
-                <p><strong>Gênero:</strong> ${filme.gender}</p>
-                <p><strong>Duração:</strong> ${filme.duration} minutos</p>
-                <p><strong>Classificação indicativa:</strong> ${filme.ageLimit > 0 ? filme.ageLimit + ' anos' : 'Livre'}</p>
-            </div>
-        `
-    })
-}
-
-buscarFilmes()
-    </script>
+    <script src="script.js"></script>
     
 </body>
 </html>
