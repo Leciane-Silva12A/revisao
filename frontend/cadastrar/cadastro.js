@@ -21,7 +21,7 @@ async function cadastrarFilme() {
         duration
     }
 
-    const resposta = await fetch("https://vercel.com/leciane-silva12as-projects/backend_filmes", {
+    const resposta = await fetch("https://backendfilmes.vercel.app/", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
