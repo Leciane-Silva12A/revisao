@@ -1,6 +1,5 @@
 async function buscarFilmes() {
-    // através do acesso a rota GET, trazer os filmes e mostrar na tela
-    const resposta = await fetch("https://backend-filmes03mc.vercel.app/")
+    const resposta = await fetch("https://backendfilmes.vercel.app/")
     const filmes = await resposta.json()
     const sectionFilmes = document.querySelector(".filmes")
     
@@ -19,7 +18,7 @@ async function buscarFilmes() {
 }
 
 async function apagarFilme(id) {
-    const resposta = await fetch(`https://backend-filmes03mc.vercel.app/delete/${id}`, { method: "DELETE" })
+    const resposta = await fetch(`https://backendfilmes.vercel.app/delete/${id}`, { method: "DELETE" })
     const respostaJS = await resposta.json()
 
     alert(respostaJS.message)
